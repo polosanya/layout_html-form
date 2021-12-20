@@ -25,6 +25,7 @@
             type="text"
             name="surname"
             id="surname"
+            autocomplete="off"
             required
           >
         </label>
@@ -35,6 +36,7 @@
             type="text"
             name="name"
             id="name"
+            autocomplete="off"
             required
           >
         </label>
@@ -92,7 +94,8 @@
             type="password"
             name="password"
             id="password"
-            required minlength="5"
+            required
+            minlength="5"
             maxlength="32"
           >
         </label>
@@ -101,23 +104,28 @@
       <fieldset class="field">
         <legend>An interesting fact about you!</legend>
 
-        <label for="firstOption" class="label">
-           Do you love cats?
-          <input
-            type="radio"
-            name="cat"
-            id="firstOption"
-            value="yes"
-          >
-          Yes
-          <input
-            type="radio"
-            name="cat"
-            id="secondOption"
-            value="no"
-          >
-          No
-        </label>
+        <div class="label">
+          Do you love cats?
+          <label for="firstOption">
+            <input
+              type="radio"
+              name="cat"
+              id="firstOption"
+              value="yes"
+            >
+            Yes
+          </label>
+
+          <label for="secondOption">
+            <input
+              type="radio"
+              name="cat"
+              id="secondOption"
+              value="no"
+            >
+            No
+          </label>
+        </div>
 
         <label for="color" class="label">
           What is your favorite color?
